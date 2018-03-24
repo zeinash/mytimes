@@ -1,0 +1,41 @@
+/* Header CSS */
+
+.header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.logo span {
+  color: MediumAquamarine;
+  margin: 10px;
+}
+
+a {
+  color: black;
+  margin: 10px;
+}
+
+span .nav {
+  display: inline;
+  padding: 20px 10px;
+}
+
+.nav {
+  padding-right: 40px;
+}
