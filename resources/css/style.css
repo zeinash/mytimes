@@ -12,6 +12,7 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  background-color: white;
 }
 
 .logo {
@@ -38,4 +39,44 @@ span .nav {
 
 .nav {
   padding-right: 40px;
+}
+
+/* Main Content */
+
+figcaption, .featurepiece, .news {
+  border: 1px solid black;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  border: 1px solid black;
+  margin-right: 32px;
+}
+
+main {
+  border: 1px solid black;
+  display: flex;
+  position: relative;
+  top: 100px;
+  overflow: scroll;
+  justify-content: space-between;
+
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.news {
+  border: 1px solid black;
 }
