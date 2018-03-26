@@ -80,3 +80,27 @@ main {
 .news {
   border: 1px solid black;
 }
+
+.image {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  margin: 0px;
+  justify-content: center;
+  height: 300px;
+}
+.feature.image {
+  background-image: url("../images/img-story-main.png");
+  font-size: 40px;
+}
+
+.two.news.image {
+  background-image: url("../images/img-story-2.png");
+
+}
+
+.three.news.image {
+  background-image: url("../images/img-story-3.png");
+}
