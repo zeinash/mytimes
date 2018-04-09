@@ -7,8 +7,8 @@
   display: flex;
   border-bottom: 1px solid black;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px;
+  justify-content: space-around;
+  height: 80px;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -17,9 +17,15 @@
 
 .logo {
   display: flex;
-  justify-content: center;
+  flex-grow: 1;
   align-items: center;
   padding-left: 30px;
+}
+
+.logo.img {
+  max-width: 70px;
+  height: 60px;
+  margin-right: 12px;
 }
 
 .logo span {
@@ -37,29 +43,23 @@ span .nav {
   padding: 20px 10px;
 }
 
-.nav {
+header .nav {
   padding-right: 40px;
 }
 
 /* Main Content */
 
-figcaption, .featurepiece, .news {
-  border: 1px solid black;
-}
-
 .column {
   display: flex;
   flex-direction: column;
   flex-grow: 0;
-  border: 1px solid black;
   margin-right: 32px;
 }
 
 main {
-  border: 1px solid black;
   display: flex;
   position: relative;
-  top: 100px;
+  top: 120px;
   overflow: scroll;
   justify-content: space-between;
 
@@ -71,14 +71,13 @@ main {
 
 .column.medium {
   width: 300px;
+  justify-content: flex-start;
+
 }
 
 .column.small {
   width: 240px;
-}
-
-.news {
-  border: 1px solid black;
+  flex-direction: column;
 }
 
 .image {
@@ -88,19 +87,110 @@ main {
   font-size: 30px;
   color: white;
   margin: 0px;
-  justify-content: center;
   height: 300px;
+  text-align: center;
+  align-items: center;
 }
+
 .feature.image {
   background-image: url("../images/img-story-main.png");
   font-size: 40px;
+  align-items: center;
+}
+
+#smaller-stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.figcaption {
+  display: flex;
+}
+
+.text.news {
+  height: 250px;
 }
 
 .two.news.image {
   background-image: url("../images/img-story-2.png");
+}
 
+.two.news, .three.news {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  letter-spacing: -0.03em;
+}
+
+.bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid black;
+}
+
+.bites.news h2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .three.news.image {
   background-image: url("../images/img-story-3.png");
+}
+
+.five.news.image {
+  background-image: url("../images/img-story-1.png");
+}
+
+.caption.feature {
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 17px;
+}
+
+h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+}
+footer {
+ background-color: MediumAquamarine;
+ margin: auto;
+ font-family: Verdana;
+ font-size: 12px;
+ position: relative;
+ top: 140px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ height: 300px;
+}
+
+footer .title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+ footer .nav {
+  display: inline;
+}
+
+footer .info {
+  height: 55px;
+  display: flex;
+  align-items: center;
 }

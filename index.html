@@ -13,8 +13,9 @@
 
       <!-- Logo + Logo Title -->
 
-      <div class="logo"><img src="./resources/images/img-myt-logo.jpg" alt="Logo of My Times">
-      <span>My Times</span>
+      <div class="logo">
+        <img class="logo img" src="./resources/images/img-myt-logo.jpg" alt="Logo of My Times">
+        <span>My Times</span>
       </div>
 
       <!-- Menu Navigation -->
@@ -49,38 +50,46 @@
 
         <!-- Second Story -->
 
-        <section class="news two">
-          <h2>Orca Spends Vacation at Land World Puget</h2>
-          <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
-          <figure class="news image two">
-            <figcaption>Earth Spins Backwards for 2017</figcaption>
-          </figure>
+        <div id="smaller-stories">
+          <section class="news two">
+            <div class="news two text">
+              <h2>Orca Spends Vacation at Land World Puget</h2>
+              <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
+            </div>
+            <figure class="news image two">
+              <figcaption>Earth Spins Backwards for 2017</figcaption>
+            </figure>
 
-        </section>
+          </section>
 
-        <!-- Third Story -->
+          <!-- Third Story -->
 
-        <section class="news three">
-          <h2>Burger for Breakfast: How Early is too Early?</h2>
-          <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
-          <figure class="news image three">
-            <figcaption>Research Shows Cameras Erase Memory</figcaption>
-          </figure>
-        </section>
-        </article>
+          <section class="news three">
+            <div class="news three text">
+              <h2>Burger for Breakfast: How Early is too Early?</h2>
+              <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
+            </div>
+            <figure class="news image three">
+              <figcaption>Research Shows Cameras Erase Memory</figcaption>
+            </figure>
+          </section>
+          </article>
+      </div>
 
       <!-- Middle Content Container -->
       <!-- Fourth Story -->
 
       <article class="medium column">
-        <section class="news">
+        <section class="news four">
           <h2>FBI Finds Action Star Guilty of False Advertising</h2>
           <p>WASHINGTON DC- Donec luctus sem augue, rutrum posuere orci aliquam sed. Nam vitae aliquam lectus. Sed tempor tortor est, nec sagittis eros tincidunt sed. Morbi venenatis condimentum sem, vitae sollicitudin turpis pulvinar eget. Morbi pellentesque consectetur mi id auctor. Phasellus tincidunt orci mauris, placerat pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras condimentum augue ut ante sollicitudin interdum. Pellentesque cursus dolor at tincidunt cursus. Vestibulum blandit aliquam felis...</p></section>
 
       <!-- Fifth Story -->
 
-        <section class="news">
-          <figcaption>Cats in Control-Is It a Thing?</figcaption>
+        <section class="news five">
+          <figure class="news image five">
+              <figcaption>Cats in Control-Is It a Thing?</figcaption>
+          </figure>
           <p>BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla scelerisque sollicitudin lobortis, dui est sodales sapien, a vestibulum velit diam eget felis. Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.</p>
           </section>
       </article>
@@ -89,15 +98,37 @@
 
       <aside class="small column">
         <figure>
-          <img src="./resources/images/img-news-bite.png" alt="Image of Cookie representing News Bites" class="figure">
+          <img src="./resources/images/img-news-bite.png" alt="Image of Cookie representing News Bites">
         </figure>
-        <section class="news">
+        <section class="news bites">
           <h2>NEWS BITES</h2>
-          <p>Cat Emoji Goes Viral Buy Youtube Views Home Business Advertising Ideas Advertising Internet Online Illustration in Marketing Materials Finally a Top Secret Way You Can</p>
+          <p>
+            <span class="bite">Cat Emoji Goes Viral</span>
+            <span class="bite">Buy Youtube Views</span>
+            <span class="bite">Home Business Advertising Ideas</span>
+            <span class="bite">Advertising Internet Online</span>
+            <span class="bite">Illustration in Marketing Materials</span>
+            <span class="bite">Finally a Top Secret Way You Can</span>
+          <p>
         </section>
       </aside>
     </main>
 
+    <footer>
+      <div class="info">
+        <span class="title">MY Times |</span>
+        <nav class="nav">
+          <span><a href="#">World</a></span>
+          <span><a href="#">U.S.</a></span>
+          <span><a href="#">Tech</a></span>
+          <span><a href="#">Science</a></span>
+        </nav>
+      </div>
+      <div class="copyright">
+        <span>© 2016, My Times (A Division of Codecademy bite)</span>
+      </div>
+
+    </footer>
 
   </body>
 </html>
